@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerManager : MonoBehaviour
@@ -250,6 +251,11 @@ public class PlayerManager : MonoBehaviour
             plataformaActual = collision.transform;
             transform.parent = plataformaActual;
         }
+        if (collision.gameObject.CompareTag("Puerta"))
+        {
+            SceneManager.LoadScene("WinScene");
+        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)

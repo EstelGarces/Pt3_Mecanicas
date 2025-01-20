@@ -16,6 +16,7 @@ TagManager:
   - PlataformaO
   - Bomb
   - Bomber
+  - Puerta
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Jugador
   - Enemy
   - Orb
-  - 
+  - Puerta
   - Dead
   - PlataformaO
   - 

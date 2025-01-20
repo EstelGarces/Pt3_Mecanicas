@@ -23,9 +23,10 @@ public class BomberManager : MonoBehaviour
     private GameObject personaje;
 
     private Transform plataformaActual = null;
+    private GameObject puerta;
 
-    private int maxLives = 5;
-    private int lives = 5;
+    private int maxLives = 1;
+    private int lives;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,9 @@ public class BomberManager : MonoBehaviour
 
         personaje = GameObject.FindGameObjectWithTag("Personaje");
         spriteRenderer = this.GetComponent<SpriteRenderer>();
+
+        puerta = GameObject.FindGameObjectWithTag("Puerta");
+        puerta.gameObject.SetActive(false);
 
         lives = maxLives;
     }
@@ -166,6 +170,7 @@ public class BomberManager : MonoBehaviour
     }
     private void DestroyM()
     {
+        puerta.SetActive(true);
         Destroy(this.gameObject);
     }
 

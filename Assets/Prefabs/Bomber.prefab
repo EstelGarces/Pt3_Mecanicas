@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3230422205188040879}
   m_Layer: 8
   m_Name: Bomber
-  m_TagString: Untagged
+  m_TagString: Bomber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 2498907210902711187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 106.4, y: 20.09, z: 20.986568}
+  m_LocalPosition: {x: 135.04, y: 19.89, z: 20.986568}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 2002886274, guid: 6cf2848b532b835488f56d6414466f59, type: 3}
+  m_Sprite: {fileID: 1342159282, guid: c367f6b18463d264694ebcaf635f834e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
