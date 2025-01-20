@@ -25,7 +25,7 @@ public class BomberManager : MonoBehaviour
     private Transform plataformaActual = null;
     private GameObject puerta;
 
-    private int maxLives = 1;
+    private int maxLives = 3;
     private int lives;
     // Start is called before the first frame update
     void Start()
