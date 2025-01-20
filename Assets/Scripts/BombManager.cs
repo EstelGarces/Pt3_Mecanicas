@@ -7,7 +7,7 @@ public class BombManager : MonoBehaviour
 {
     private Animator animator;
 
-    public float velocidad = 2f;
+    public float velocidad = 1.5f;
     public Vector2 direccionMovimiento;
     private Transform objetivo;          // Transform del jugador
     public GameObject explosionEffect;

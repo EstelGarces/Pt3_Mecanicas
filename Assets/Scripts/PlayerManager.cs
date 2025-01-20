@@ -187,6 +187,10 @@ public class PlayerManager : MonoBehaviour
     {
         numOrb++;
         orbNum.text = "x" + numOrb.ToString();
+        if(numOrb > 2)
+        {
+            SumScore(150);
+        }
     }
     private void InstanciarEspada()
     {

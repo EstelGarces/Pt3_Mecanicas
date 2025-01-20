@@ -40,18 +40,18 @@ public class SwordManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            slime.GetComponent<Animator>().SetTrigger("isDead");
-            slime.GetComponent<EnemyManager>().MuerteEnemigo();
+            collision.gameObject.GetComponent<Animator>().SetTrigger("isDead");
+            collision.gameObject.GetComponent<EnemyManager>().MuerteEnemigo();
         }
         if (collision.gameObject.CompareTag("Mushroom"))
         {
-            mushroom.GetComponent<Animator>().SetTrigger("isDead");
-            mushroom.GetComponent<MushroomManager>().MuerteEnemigo();
+            collision.gameObject.GetComponent<Animator>().SetTrigger("isDead");
+            collision.gameObject.GetComponent<MushroomManager>().MuerteEnemigo();
         }
         if (collision.gameObject.CompareTag("Bomber"))
         {
-            bomber.GetComponent<BomberManager>().GetHit();
-            bomber.GetComponent<BomberManager>().SubstractLives();
+            collision.gameObject.GetComponent<BomberManager>().GetHit();
+            collision.gameObject.GetComponent<BomberManager>().SubstractLives();
 
         }
     }
