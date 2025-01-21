@@ -363,6 +363,6 @@ public class PlayerManager : MonoBehaviour
 
     private void MuertePersonaje()
     {
-
+        SceneManager.LoadScene("LostScene");
     }
 }
